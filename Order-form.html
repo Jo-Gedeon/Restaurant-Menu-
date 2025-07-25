@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Jo's Empanadilla Palace</title>
+        
         <style>
             li {
                 display: inline;
@@ -43,20 +44,33 @@
 
         <h2>Order Query</h2>
         <form>
-            Beef: <input type="number" >
+            <label id="beef-num">Beef:</label> <input type="number" min="0" >
             <br>
-            Chicken: <input type="number">
+            <label id="chicken-num">Chicken:</label> <input type="number" min="0">
             <br>
-            Pizza: <input type="number">
+            <label id="pizza-num">Pizza:</label> <input type="number" min="0">
             <br><br>
-            <h2>Contact Information</h2>
-            Phone Number: <input type="tel">
+            <p>Would You like a soda?</p>
+            <input type="radio">
+            <label id="yes-soda">Yes</label>
             <br>
-            Email (For Rewards): <input type="emails">
-            <br><br>
-            <button type="submit">Order</button>
-        </form>
+            <input type="radio">
+            <label id="no-soda">No</label>
 
+            <br><br>
+            <label id="Special Instructions">Any Special Instructions?</label>
+            <br>
+            <textarea>
+                
+            </textarea>
+            <h2>Contact Information</h2>
+            <label id="Phone-Num">Phone Number:</label> <input type="tel">
+            <br>
+            <label id="Email">Email (For Rewards):</label> <input type="emails">
+            <br><br>
+            <label id="Checkout-button">Checkout:</label>
+            <button type="submit">Go To Checkout</button>
+        </form>
         <h3>Thank you for your business!</h3>
     </main>
     <footer>
